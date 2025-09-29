@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: predictor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: predictor
+  template:
+    metadata:
+      labels:
+        app: predictor
+    spec:
+      containers:
+        - name: predictor
+          image: predictor:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8001
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: predictor
+spec:
+  selector:
+    app: predictor
+  ports:
+    - port: 8001
+      targetPort: 8001
+  type: ClusterIP

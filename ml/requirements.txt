@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn==1.6.1
+matplotlib
+uvicorn
+fastapi
+seaborn
+joblib
+tqdm
+pydantic
+joblib
