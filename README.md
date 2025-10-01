@@ -28,12 +28,8 @@ It includes features like:
   - [Database](#database)
 - [Machine Learning](#machine-learning)
 - [Deployment](#deployment)
-  - [Docker](#docker)
-  - [Kubernetes (Minikube)](#kubernetes-minikube)
 - [Monitoring](#monitoring)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -149,3 +145,20 @@ Tracks:
 - Job processing duration
 
 ### Screenshots
+
+**1. Job Enqueuing**  
+Example of a job being successfully enqueued via the Tinytemp API.
+
+<img width="1396" height="740" alt="Job Enqueuing" src="https://github.com/user-attachments/assets/38db84e3-49f5-4a12-b462-0af56c918d8b" />
+
+**2. All Available Jobs**  
+Current jobs in the database, showing pending and in-progress tasks.  
+
+<img width="1902" height="161" alt="Jobs History" src="https://github.com/user-attachments/assets/38346e43-e37b-49d5-81bc-205dc413f82d" />
+<img width="1898" height="153" alt="All Jobs 2" src="https://github.com/user-attachments/assets/979a63b3-d037-457f-869f-f263dfbb5733" />
+
+**3. Jobs History**  
+Demonstrates the job lifecycle tracking, including succeeded, failed, and retried jobs, stored in PostgreSQL.
+
+<img width="1303" height="163" alt="All Jobs 1" src="https://github.com/user-attachments/assets/ad18751b-b0c9-48c7-b331-a929add057ad" />  
+
